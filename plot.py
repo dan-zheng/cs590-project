@@ -28,7 +28,7 @@ def get_data(filename):
         # Get No. and GFLOPS.
         l = l[:2]
         x = int(l[0].split(' ')[1]) - 1
-        y = l[1].split('/')[1]
+        y = float(l[1].split('/')[1])
         # data.append((x, y))
         xs.append(x)
         ys.append(y)
@@ -53,41 +53,32 @@ def plot(filenames):
   # ps = ax.plot(xs, ys, 'r--', xs, ys, 'bs', linewidth=2, label='Default')
 
   for xs, ys, label in data:
-    # ps = ax.plot(xs, ys, linewidth=2, label='Default')
     ps = ax.plot(xs, ys, linewidth=2, label=label)
-  # ps = ax.plot(xs, ys, 'r--', linewidth=2, label='Default')
-  # ps = ax.plot(xs, ys, 'bs', linewidth=2, label='Curve')
+
+  all_xs = [d[0] for d in data]
+  base_xs = max(all_xs, key=lambda x: len(x))
+
+  all_ys = [d[1][-1] for d in data]
+  max_y = max(all_ys)
 
   ax.legend()
   ax.set(xlabel='Number of trials', ylabel='GFLOPS',
          title='ResNet C12')
 
-  # ps = plt.plot(ys, linewidth=2)
-  x_tick = max(100, len(xs) // 10)
-  # ax.set_xticks(xs[::10])
-  ax.set_xticks(xs[::x_tick])
-  # ax.set_yticks(xs[::x_tick])
+  # Optional: set x_ticks.
+  # x_tick = max(100, len(base_xs) // 10)
+  # print('x_ticks', base_xs[::x_tick])
+  # ax.set_xticks(base_xs[::x_tick])
 
-  # start, end = ax.get_ylim()
-  # ax.yaxis.set_ticks(np.arange(0, end, 2))
-  # ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.1f'))
+  # Optional: set y_ticks.
+  # May want to use TFLOPS on y-axis.
+  # print('max_y', max_y)
+  # ax.set_yticks(np.arange(0, max_y, 100))
 
   plt.show()
   pylab.savefig(os.path.join(figures_dir, 'result' + '.png'))
 
 if __name__ == "__main__":
   import sys
-  filename = sys.argv[1]
-  # data = get_data(filename)
-  # xs, ys = data
-  # print(data)
   filenames = sys.argv[1:]
   plot(filenames)
-
-  #print(sys.argv)
-  # model = sys.argv[1]
-  # n_files = len(sys.argv) - 2
-  # files = []
-  # for i in range(n_files):
-  #   files.append(sys.argv[i+2])
-  # plot(files, model)
