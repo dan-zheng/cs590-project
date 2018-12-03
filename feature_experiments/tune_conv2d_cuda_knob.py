@@ -236,7 +236,7 @@ def run(tuner, n_trial, config_file, repeat_number):
 feature_types = ['itervar', 'knob', 'curve']
 feature_type = feature_types[1]
 
-filename = 'conv2d-{}'.format(feature_type)
+filename = 'conv2d_{}'.format(feature_type)
 config_file = '{}.log'.format(filename)
 log_file = '{}.txt'.format(filename)
 
@@ -252,6 +252,6 @@ task = autotvm.task.create(conv2d_no_batching,
 print(task.config_space)
 
 tuner = autotvm.tuner.XGBTuner(task, feature_type=feature_type)
-n_trial = 20
+n_trial = 1000
 repeat_number = 1000
 run(tuner, n_trial, config_file, repeat_number)
