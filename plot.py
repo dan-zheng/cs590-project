@@ -8,14 +8,13 @@ import matplotlib.ticker as ticker
 
 def get_label(filename):
   filename = filename.split('.')[0]
-  if filename.endswith('itervar'):
+  if 'itervar' in filename:
     return 'itervar'
-  elif filename.endswith('knob'):
+  elif 'knob' in filename:
     return 'knob'
-  elif filename.endswith('curve'):
+  elif 'curve' in filename:
     return 'curve'
-  else:
-    return 'itervar'
+  raise ValueError('Unrecognized label')
 
 def get_data(filename):
   xs = []
@@ -23,36 +22,37 @@ def get_data(filename):
   with open(filename, 'r') as f:
     for line in f:
       line = line.rstrip()
+      if line.startswith("DEBUG:autotvm:"):
+          line = line[len("DEBUG:autotvm:"):]
       if line.startswith("No:"):
         l = line.split('\t')
         # Get No. and GFLOPS.
         l = l[:2]
         x = int(l[0].split(' ')[1]) - 1
         y = float(l[1].split('/')[1])
-        # data.append((x, y))
         xs.append(x)
         ys.append(y)
   return xs, ys, get_label(filename)
 
-def plot(filenames):
-  # Save dir.
+def plot(title, filenames):
+  # Create figure directory.
   figures_dir = 'figures'
   if not os.path.exists(figures_dir):
     os.makedirs(figures_dir)
 
+  # Get data.
   data = []
   for f in filenames:
       data.append(get_data(f))
 
   # Plot.
-  # for xs, ys in data:
-  # assert(len(xs) == len(ys))
   fig, ax = plt.subplots()
   # ps = plt.bar(xs, ys, width = 0.55)
   # ax.set_xticks(xs)
   # ps = ax.plot(xs, ys, 'r--', xs, ys, 'bs', linewidth=2, label='Default')
 
   for xs, ys, label in data:
+    print(ys)
     ps = ax.plot(xs, ys, linewidth=2, label=label)
 
   all_xs = [d[0] for d in data]
@@ -78,7 +78,11 @@ def plot(filenames):
   plt.show()
   pylab.savefig(os.path.join(figures_dir, 'result' + '.png'))
 
+USAGE = 'plot.py <title> <filenames...>'
+
 if __name__ == "__main__":
   import sys
-  filenames = sys.argv[1:]
-  plot(filenames)
+  assert len(sys.argv) > 2, "Expected title and filenames"
+  title = sys.argv[1]
+  filenames = sys.argv[2:]
+  plot(title, filenames)
