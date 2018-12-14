@@ -1,0 +1,720 @@
+ConfigSpace (len=74649600, space_map=
+   0 tile_f: Split(policy=all, product=128, num_outputs=4) len=120
+   1 tile_y: Split(policy=all, product=14, num_outputs=4) len=16
+   2 tile_x: Split(policy=all, product=14, num_outputs=4) len=16
+   3 tile_rc: Split(policy=all, product=256, num_outputs=3) len=45
+   4 tile_ry: Split(policy=all, product=3, num_outputs=3) len=3
+   5 tile_rx: Split(policy=all, product=3, num_outputs=3) len=3
+   6 auto_unroll_max_step: OtherOption([0, 512, 1500]) len=3
+   7 unroll_explicit: OtherOption([0, 1]) len=2
+)
+Get devices for measurement successfully!
+TOTAL TRIAL COUNT = 1000
+TIME: 8.106231689453125e-06, number of trials = 0
+TIME: 0.002813100814819336, get next batch count = 48
+TIME: 0.003034353256225586, constructed inputs
+increasing number to 355
+increasing number to 395
+TIME: 231.90807938575745, measured batch
+No: 1	GFLOPS: 34.4730/34.4730	cost: 0.0034	result: MeasureResult(costs=(0.0033535068929577464,), error_no=0, all_cost=15.886852979660034, timestamp=1543951859.5015585)	[('tile_f', [8, 1, 4, 4]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [2, 8, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,67371195
+No: 2	GFLOPS: 66.8019/66.8019	cost: 0.0017	result: MeasureResult(costs=(0.0017305726366197184,), error_no=0, all_cost=5.586836814880371, timestamp=1543951864.6755562)	[('tile_f', [4, 4, 4, 2]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,47009691
+No: 3	GFLOPS: 88.0891/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.001312370132394366,), error_no=0, all_cost=14.447548389434814, timestamp=1543951869.650388)	[('tile_f', [32, 1, 2, 2]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [4, 64, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66557083
+No: 4	GFLOPS: 0.0000/88.0891	cost: 0.0013	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03159475326538086, timestamp=1543951779.887943)	[('tile_f', [2, 1, 1, 64]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,15085196
+No: 5	GFLOPS: 2.8218/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.0409690265,), error_no=0, all_cost=22.068514347076416, timestamp=1543951808.2946112)	[('tile_f', [2, 32, 2, 1]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,57031333
+No: 6	GFLOPS: 0.0000/88.0891	cost: 0.0013	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05478334426879883, timestamp=1543951779.8881211)	[('tile_f', [1, 2, 4, 16]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [8, 2, 16]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,53500908
+No: 7	GFLOPS: 2.3458/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.04928157775,), error_no=0, all_cost=5.208605051040649, timestamp=1543951812.5442603)	[('tile_f', [16, 2, 1, 4]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [32, 2, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,44794265
+No: 8	GFLOPS: 8.2446/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.014021886633802817,), error_no=0, all_cost=22.167837619781494, timestamp=1543951888.0685568)	[('tile_f', [4, 2, 1, 16]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [16, 2, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25678301
+No: 9	GFLOPS: 7.0296/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.01644551769859155,), error_no=0, all_cost=23.63474416732788, timestamp=1543951909.185492)	[('tile_f', [2, 8, 2, 4]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [16, 4, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,36544513
+No: 10	GFLOPS: 6.9245/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.01669514115492958,), error_no=0, all_cost=21.29953098297119, timestamp=1543951930.1337862)	[('tile_f', [4, 32, 1, 1]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [4, 64, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,1568765
+No: 11	GFLOPS: 0.0000/88.0891	cost: 0.0013	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04055213928222656, timestamp=1543951779.8884926)	[('tile_f', [1, 1, 1, 128]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [1, 128, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66866519
+No: 12	GFLOPS: 0.0000/88.0891	cost: 0.0013	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.0310666561126709, timestamp=1543951779.8885698)	[('tile_f', [2, 16, 1, 4]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [4, 32, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,46078268
+No: 13	GFLOPS: 12.0531/88.0891	cost: 0.0013	result: MeasureResult(costs=(0.00959138598028169,), error_no=0, all_cost=15.914151668548584, timestamp=1543951943.9227467)	[('tile_f', [4, 8, 1, 4]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [4, 32, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,65403547
+No: 14	GFLOPS: 280.4589/280.4589	cost: 0.0004	result: MeasureResult(costs=(0.0004122012985915493,), error_no=0, all_cost=4.677826404571533, timestamp=1543951947.7090821)	[('tile_f', [4, 2, 16, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [8, 32, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,20909907
+No: 15	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04383254051208496, timestamp=1543951779.8887782)	[('tile_f', [2, 2, 2, 16]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [4, 2, 32]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17714865
+No: 16	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.1591782569885254, timestamp=1543951779.8888416)	[('tile_f', [2, 16, 1, 4]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [2, 128, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,62447828
+No: 17	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03047943115234375, timestamp=1543951779.8889072)	[('tile_f', [2, 1, 16, 4]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [2, 16, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16091122
+No: 18	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.059339046478271484, timestamp=1543951779.8889697)	[('tile_f', [1, 8, 1, 16]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [32, 1, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,32553463
+No: 19	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.032752275466918945, timestamp=1543951779.8890333)	[('tile_f', [16, 4, 2, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 2, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40043050
+No: 20	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03569769859313965, timestamp=1543951779.8890977)	[('tile_f', [1, 4, 8, 4]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [4, 32, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,36401121
+No: 21	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.08575582504272461, timestamp=1543951779.8891563)	[('tile_f', [32, 2, 2, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,52422609
+No: 22	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.029665708541870117, timestamp=1543951779.8892221)	[('tile_f', [4, 32, 1, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [1, 32, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,20247725
+No: 23	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.033447265625, timestamp=1543951779.889282)	[('tile_f', [1, 4, 2, 16]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [4, 8, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7750786
+No: 24	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05542254447937012, timestamp=1543951779.889341)	[('tile_f', [1, 4, 16, 2]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [8, 8, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,13069740
+No: 25	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05178546905517578, timestamp=1543951779.8894062)	[('tile_f', [1, 2, 1, 64]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [16, 4, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,6117837
+No: 26	GFLOPS: 6.7604/280.4589	cost: 0.0004	result: MeasureResult(costs=(0.01710026803943662,), error_no=0, all_cost=21.985549688339233, timestamp=1543951969.1773791)	[('tile_f', [16, 4, 2, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [16, 2, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,38104090
+No: 27	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04233217239379883, timestamp=1543951779.8895333)	[('tile_f', [2, 1, 8, 8]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,14637817
+No: 28	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06875014305114746, timestamp=1543951779.8895943)	[('tile_f', [1, 4, 32, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [16, 4, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,28238312
+No: 29	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.21994423866271973, timestamp=1543951779.889661)	[('tile_f', [8, 4, 2, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [2, 1, 128]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,55209045
+No: 30	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.029530048370361328, timestamp=1543951779.8897233)	[('tile_f', [2, 1, 16, 4]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [1, 256, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,18224722
+No: 31	GFLOPS: 0.0000/280.4589	cost: 0.0004	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05646991729736328, timestamp=1543951779.8897817)	[('tile_f', [1, 2, 4, 16]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33168708
+No: 32	GFLOPS: 11.0882/280.4589	cost: 0.0004	result: MeasureResult(costs=(0.010426020307042254,), error_no=0, all_cost=17.367674350738525, timestamp=1543951983.610351)	[('tile_f', [16, 1, 2, 4]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66887470
+No: 33	GFLOPS: 455.0863/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.000254029853164557,), error_no=0, all_cost=3.9556691646575928, timestamp=1543952001.9990811)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [32, 8, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29130390
+No: 34	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04620671272277832, timestamp=1543951779.8899822)	[('tile_f', [1, 8, 16, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [1, 8, 32]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,34365269
+No: 35	GFLOPS: 30.3276/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.003811891704225352,), error_no=0, all_cost=7.705501556396484, timestamp=1543951994.1897519)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,49184541
+No: 36	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.6508333683013916, timestamp=1543951779.8901186)	[('tile_f', [1, 32, 1, 4]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [4, 8, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,63047589
+No: 37	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.22412586212158203, timestamp=1543951779.8901846)	[('tile_f', [4, 8, 1, 4]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [2, 2, 64]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,73120267
+No: 38	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03036212921142578, timestamp=1543951779.890251)	[('tile_f', [32, 1, 1, 4]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [2, 64, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,21227344
+No: 39	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03986692428588867, timestamp=1543951779.890315)	[('tile_f', [4, 2, 16, 1]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [8, 16, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,43272027
+No: 40	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.07577323913574219, timestamp=1543951779.890376)	[('tile_f', [8, 2, 4, 2]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 64, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,57398690
+No: 41	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.0837092399597168, timestamp=1543951779.8904445)	[('tile_f', [64, 1, 1, 2]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 256, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,73531716
+No: 42	GFLOPS: 171.6676/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0006734263690140846,), error_no=0, all_cost=5.237534761428833, timestamp=1543951998.3609889)	[('tile_f', [8, 4, 1, 4]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [8, 2, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,50719746
+No: 43	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.0861508846282959, timestamp=1543951779.8905637)	[('tile_f', [32, 2, 1, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [16, 8, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,36325837
+No: 44	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.1295931339263916, timestamp=1543951779.8906252)	[('tile_f', [8, 1, 1, 16]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [2, 8, 16]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66013300
+No: 45	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.07451033592224121, timestamp=1543951779.8906872)	[('tile_f', [1, 4, 1, 32]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [4, 8, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16056952
+No: 46	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04175138473510742, timestamp=1543951779.8907466)	[('tile_f', [16, 8, 1, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [2, 1, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40025643
+No: 47	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.14434289932250977, timestamp=1543951779.8908048)	[('tile_f', [2, 32, 1, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [1, 4, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,63480401
+No: 48	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03095865249633789, timestamp=1543951779.8908648)	[('tile_f', [2, 32, 1, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 8, 32]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,45404321
+TIME: 231.91276049613953, about to update
+TIME: 231.9130675792694, done update
+TIME: 231.91731762886047, done callbacks
+TIME: 231.91746950149536, number of trials = 48
+TIME: 231.91846799850464, get next batch count = 48
+TIME: 231.918630361557, constructed inputs
+TIME: 384.6646122932434, measured batch
+No: 49	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.07242679595947266, timestamp=1543952002.548368)	[('tile_f', [1, 2, 4, 16]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16010268
+No: 50	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.039461612701416016, timestamp=1543952002.5485067)	[('tile_f', [16, 1, 1, 8]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [2, 128, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33400285
+No: 51	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05843710899353027, timestamp=1543952002.548586)	[('tile_f', [1, 8, 1, 16]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [1, 2, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,44204623
+No: 52	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.1686549186706543, timestamp=1543952002.5486681)	[('tile_f', [2, 1, 32, 2]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 4, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,51044941
+No: 53	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.07354545593261719, timestamp=1543952002.5487444)	[('tile_f', [1, 4, 16, 2]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [32, 2, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,47569500
+No: 54	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06607866287231445, timestamp=1543952002.5488255)	[('tile_f', [1, 2, 8, 8]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 2, 128]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41410898
+No: 55	GFLOPS: 6.0511/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.019104853703797466,), error_no=0, all_cost=29.63282823562622, timestamp=1543952040.213771)	[('tile_f', [1, 8, 2, 8]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29557533
+No: 56	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05848956108093262, timestamp=1543952004.295143)	[('tile_f', [4, 2, 4, 4]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,47816716
+No: 57	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06173300743103027, timestamp=1543952004.295202)	[('tile_f', [8, 4, 2, 2]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [2, 128, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40306965
+No: 58	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05109047889709473, timestamp=1543952004.295259)	[('tile_f', [2, 16, 2, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [4, 32, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,5987927
+No: 59	GFLOPS: 11.7255/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.009859356751898734,), error_no=0, all_cost=15.410627603530884, timestamp=1543952055.208583)	[('tile_f', [8, 4, 2, 2]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [8, 1, 32]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7991085
+No: 60	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.18021631240844727, timestamp=1543952004.2953696)	[('tile_f', [4, 1, 16, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [1, 32, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,43751218
+No: 61	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.47195935249328613, timestamp=1543952004.2954328)	[('tile_f', [2, 1, 8, 8]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [8, 32, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,62386417
+No: 62	GFLOPS: 70.6380/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0016365915189873418,), error_no=0, all_cost=5.7406394481658936, timestamp=1543952060.5056365)	[('tile_f', [2, 4, 16, 1]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [4, 1, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,1199068
+No: 63	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.17057275772094727, timestamp=1543952004.295529)	[('tile_f', [4, 2, 4, 4]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 8, 32]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17757076
+No: 64	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.2916219234466553, timestamp=1543952004.295579)	[('tile_f', [2, 32, 1, 2]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [1, 1, 256]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,67718081
+No: 65	GFLOPS: 80.3842/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0014381615974683544,), error_no=0, all_cost=5.353093147277832, timestamp=1543952065.5464265)	[('tile_f', [32, 2, 2, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [8, 8, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,39343209
+No: 66	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.13142871856689453, timestamp=1543952004.2956688)	[('tile_f', [1, 16, 2, 4]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [1, 8, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,64760834
+No: 67	GFLOPS: 7.6680/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.015076420116455698,), error_no=0, all_cost=22.35946536064148, timestamp=1543952086.851477)	[('tile_f', [8, 8, 2, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [8, 8, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,37946051
+No: 68	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(TimeoutError(),), error_no=6, all_cost=10, timestamp=1543952012.4113607)	[('tile_f', [1, 8, 4, 4]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40406838
+No: 69	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(TimeoutError(),), error_no=6, all_cost=10, timestamp=1543952012.4258409)	[('tile_f', [1, 64, 1, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [32, 1, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,21484962
+No: 70	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.12789487838745117, timestamp=1543952012.4259646)	[('tile_f', [1, 4, 32, 1]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [4, 16, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,57330512
+No: 71	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.0360107421875, timestamp=1543952012.4260488)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 8, 32]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41271774
+No: 72	GFLOPS: 37.9742/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0030443181088607597,), error_no=0, all_cost=7.3754613399505615, timestamp=1543952093.8934636)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [32, 2, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7472061
+No: 73	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.034723520278930664, timestamp=1543952012.4261966)	[('tile_f', [8, 4, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 1, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,35859017
+No: 74	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03970694541931152, timestamp=1543952012.4262753)	[('tile_f', [1, 8, 4, 4]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [8, 1, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,10754958
+No: 75	GFLOPS: 6.6848/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.01729374218987342,), error_no=0, all_cost=25.14288878440857, timestamp=1543952117.932061)	[('tile_f', [16, 2, 1, 4]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [8, 32, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,72039545
+No: 76	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.24216318130493164, timestamp=1543952012.4264443)	[('tile_f', [8, 2, 1, 8]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [4, 32, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66806846
+No: 77	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.12856698036193848, timestamp=1543952012.426523)	[('tile_f', [16, 1, 1, 8]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,73265485
+No: 78	GFLOPS: 228.3941/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0005061668050632912,), error_no=0, all_cost=4.4530930519104, timestamp=1543952122.151909)	[('tile_f', [16, 4, 2, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [32, 2, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,42048490
+No: 79	GFLOPS: 391.1135/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.00029558044556962025,), error_no=0, all_cost=4.620006322860718, timestamp=1543952126.0643597)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [32, 1, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,71256266
+No: 80	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.12291145324707031, timestamp=1543952012.426753)	[('tile_f', [8, 1, 2, 8]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,52412850
+No: 81	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04965806007385254, timestamp=1543952012.4268227)	[('tile_f', [1, 1, 64, 2]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [16, 1, 16]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,18897903
+No: 82	GFLOPS: 26.3920/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.004380316227848101,), error_no=0, all_cost=9.144022703170776, timestamp=1543952134.5861194)	[('tile_f', [32, 2, 1, 2]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [16, 8, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,23897437
+No: 83	GFLOPS: 274.8608/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0004205965291139241,), error_no=0, all_cost=4.870668411254883, timestamp=1543952138.362768)	[('tile_f', [8, 2, 4, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,62533850
+No: 84	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04511260986328125, timestamp=1543952012.427043)	[('tile_f', [4, 2, 1, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [1, 256, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29289101
+No: 85	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04368162155151367, timestamp=1543952012.4271183)	[('tile_f', [4, 1, 8, 4]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,46430479
+No: 86	GFLOPS: 37.6640/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.003069390040506329,), error_no=0, all_cost=8.035603523254395, timestamp=1543952145.6924627)	[('tile_f', [4, 32, 1, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,55826405
+No: 87	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04632925987243652, timestamp=1543952012.4272604)	[('tile_f', [2, 1, 4, 16]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [1, 32, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,2294747
+No: 88	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.047563791275024414, timestamp=1543952012.4273307)	[('tile_f', [1, 1, 4, 32]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [1, 4, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,9575755
+No: 89	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06507515907287598, timestamp=1543952012.4274025)	[('tile_f', [2, 2, 8, 4]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [16, 4, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,18564800
+No: 90	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.045317649841308594, timestamp=1543952012.427475)	[('tile_f', [1, 2, 4, 16]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [4, 16, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33838428
+No: 91	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04773449897766113, timestamp=1543952012.427543)	[('tile_f', [32, 4, 1, 1]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [4, 4, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,999002
+No: 92	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06159353256225586, timestamp=1543952012.427618)	[('tile_f', [2, 8, 8, 1]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [2, 128, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,2991744
+No: 93	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03420138359069824, timestamp=1543952012.427685)	[('tile_f', [1, 1, 4, 32]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [8, 2, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,46592635
+No: 94	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.035163164138793945, timestamp=1543952012.4277508)	[('tile_f', [2, 8, 2, 4]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [4, 4, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,13453393
+No: 95	GFLOPS: 28.4835/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.004058688617721519,), error_no=0, all_cost=10.632242202758789, timestamp=1543952154.7205648)	[('tile_f', [2, 4, 1, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,63906702
+No: 96	GFLOPS: 0.0000/455.0863	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.20896363258361816, timestamp=1543952012.4279604)	[('tile_f', [1, 16, 8, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [16, 8, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,65346145
+TIME: 384.6761682033539, about to update
+XGBOOST START CALLBACK
+XGB iter:   0	tr-a-recall@64: 0.542156	tr-map: 0.062500
+XGBOOST DONE CALLBACK: 0.009896516799926758
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0013501644134521484
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010950565338134766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010776519775390625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010874271392822266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011212825775146484
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001308441162109375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.012369155883789062
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001100301742553711
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001085042953491211
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010335445404052734
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010912418365478516
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001089334487915039
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0019359588623046875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011129379272460938
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011091232299804688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001119852066040039
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010571479797363281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010211467742919922
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010673999786376953
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010385513305664062
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010597705841064453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001077413558959961
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010797977447509766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010306835174560547
+XGBOOST START CALLBACK
+XGB iter:  25	tr-a-recall@64: 0.683895	tr-map: 1.000000
+XGBOOST DONE CALLBACK: 0.0011603832244873047
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010793209075927734
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010340213775634766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010421276092529297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010552406311035156
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001127481460571289
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010578632354736328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010426044464111328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010848045349121094
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010328292846679688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00106048583984375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010344982147216797
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010287761688232422
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010280609130859375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010385513305664062
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010523796081542969
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010938644409179688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010652542114257812
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010678768157958984
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001039266586303711
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011208057403564453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001058816909790039
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010561943054199219
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010528564453125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010514259338378906
+XGBOOST START CALLBACK
+XGB iter:  50	tr-a-recall@64: 0.697097	tr-map: 0.500000
+XGBOOST DONE CALLBACK: 0.0011365413665771484
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010509490966796875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010576248168945312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010361671447753906
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001064300537109375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010743141174316406
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001046895980834961
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010199546813964844
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010631084442138672
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010292530059814453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010273456573486328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010275840759277344
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001049041748046875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00102996826171875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001055002212524414
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010590553283691406
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010552406311035156
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001024007797241211
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010476112365722656
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010390281677246094
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010404586791992188
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010631084442138672
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001049041748046875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001046895980834961
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010514259338378906
+XGBOOST START CALLBACK
+XGB iter:  75	tr-a-recall@64: 0.708701	tr-map: 0.500000
+XGBOOST DONE CALLBACK: 0.0009043216705322266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008130073547363281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008821487426757812
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.000982522964477539
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008251667022705078
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008587837219238281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008692741394042969
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008356571197509766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008797645568847656
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008141994476318359
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008268356323242188
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008113384246826172
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008161067962646484
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008206367492675781
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008437633514404297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008440017700195312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008170604705810547
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008137226104736328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008080005645751953
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008063316345214844
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008091926574707031
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008094310760498047
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008292198181152344
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008134841918945312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008187294006347656
+XGBOOST START CALLBACK
+XGB iter: 100	tr-a-recall@64: 0.704857	tr-map: 0.333333
+XGBOOST DONE CALLBACK: 0.0008730888366699219
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008137226104736328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008156299591064453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008294582366943359
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008177757263183594
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008306503295898438
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008101463317871094
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008211135864257812
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008232593536376953
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0008270740509033203
+XGBOOST START CALLBACK
+XGB stopped. Best iteration: [90] tr-a-recall@64:0.712037	tr-map:0.5 
+XGB train: 3.11	obs: 96	error: 68	n_cache: 96
+SA iter: 50	last_update: 49	max-0: 10.54	max-1: 11.82	temp: 0.90	elapsed: 29.41
+SA iter: 100	last_update: 98	max-0: 11.20	max-1: 11.82	temp: 0.80	elapsed: 52.60
+SA iter: 150	last_update: 148	max-0: 11.40	max-1: 11.89	temp: 0.70	elapsed: 73.16
+SA iter: 200	last_update: 194	max-0: 11.47	max-1: 11.89	temp: 0.60	elapsed: 90.55
+SA iter: 250	last_update: 248	max-0: 11.59	max-1: 11.91	temp: 0.50	elapsed: 107.42
+SA iter: 300	last_update: 296	max-0: 11.65	max-1: 11.91	temp: 0.40	elapsed: 123.38
+SA iter: 350	last_update: 348	max-0: 11.66	max-1: 11.91	temp: 0.30	elapsed: 140.65
+SA iter: 400	last_update: 399	max-0: 11.71	max-1: 11.91	temp: 0.20	elapsed: 154.66
+SA iter: 450	last_update: 447	max-0: 11.74	max-1: 11.92	temp: 0.10	elapsed: 167.59
+SA iter: 500	last_update: 493	max-0: 11.76	max-1: 11.92	temp: 0.00	elapsed: 177.23
+SA iter: 500	last_update: 493	max-0: 11.76	max-1: 11.92	elapsed: 177.23
+SA Maximums: [(11.916231, 17159776), (11.916231, 4718176), (11.916231, 29601376), (11.913042, 17129061), (11.913042, 4687461), (11.913042, 29570656), (11.913042, 17129056), (11.913042, 29570661), (11.913042, 4687456), (11.908429, 16866976), (11.908429, 29308576), (11.908429, 4425376), (11.904146, 17112376), (11.904146, 4670776), (11.904146, 29553976), (11.896192, 2828070), (11.896192, 27711270), (11.896192, 15269670), (11.892549, 17128816), (11.892549, 29570416), (11.891807, 16668016), (11.865412, 20785096), (11.865412, 8343496), (11.865412, 33226696), (11.863135, 339616), (11.863135, 25222816), (11.863135, 12781216), (11.856037, 4164976), (11.856037, 29048176), (11.853465, 16866615), (11.853465, 29308215), (11.853465, 4425015), (11.835704, 6913335), (11.822656, 12780981), (11.822656, 25222581), (11.822656, 339381), (11.817028, 33257055), (11.794661, 25208781), (11.794661, 325581), (11.794661, 12767181), (11.789131, 325576), (11.789131, 25208776), (11.789131, 12767176), (11.78715, 8374590), (11.78715, 33257790), (11.78715, 20816190), (11.784161, 4209741), (11.784161, 16651341), (11.784161, 29092941), (11.775759, 41750176), (11.775759, 66633376), (11.775759, 54191776), (11.7752695, 25484689), (11.773224, 12797896), (11.773224, 356296), (11.773224, 25239496), (11.769429, 355696), (11.769429, 12797296), (11.769429, 25238896), (11.76352, 52594470), (11.76352, 40152870), (11.76352, 65036070), (11.761075, 16866741), (11.761075, 29308341)]
+TIME: 565.0247237682343, done update
+TIME: 565.0295662879944, done callbacks
+TIME: 565.0297563076019, number of trials = 96
+TIME: 565.0310335159302, get next batch count = 48
+TIME: 565.031741142273, constructed inputs
+increasing number to 501
+TIME: 642.7037391662598, measured batch
+No: 97	GFLOPS: 282.9829/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.00040852466329113925,), error_no=0, all_cost=1.7504372596740723, timestamp=1543952338.5156002)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [32, 2, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17159776
+No: 98	GFLOPS: 265.9787/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.00043464190126582276,), error_no=0, all_cost=1.5396082401275635, timestamp=1543952339.8089852)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [32, 2, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4718176
+No: 99	GFLOPS: 324.0326/455.0863	cost: 0.0003	result: MeasureResult(costs=(0.0003567712405063291,), error_no=0, all_cost=1.8463637828826904, timestamp=1543952341.2709515)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [32, 2, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29601376
+No: 100	GFLOPS: 569.6967/569.6967	cost: 0.0002	result: MeasureResult(costs=(0.00020292463672654692,), error_no=0, all_cost=1.2981376647949219, timestamp=1543952406.2737098)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17129061
+No: 101	GFLOPS: 570.7042/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00020256643113772453,), error_no=0, all_cost=1.2139577865600586, timestamp=1543952407.2916424)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4687461
+No: 102	GFLOPS: 407.4323/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002837416227848101,), error_no=0, all_cost=1.4705336093902588, timestamp=1543952344.4648607)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29570656
+No: 103	GFLOPS: 407.5205/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002836802303797468,), error_no=0, all_cost=1.4626893997192383, timestamp=1543952345.5283308)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17129056
+No: 104	GFLOPS: 569.7879/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002028921636726547,), error_no=0, all_cost=1.348160743713379, timestamp=1543952408.3418975)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29570661
+No: 105	GFLOPS: 450.4383/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.000256651125748503,), error_no=0, all_cost=1.4533655643463135, timestamp=1543952409.446395)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4687456
+No: 106	GFLOPS: 198.9129/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0005811864253164557,), error_no=0, all_cost=2.5585973262786865, timestamp=1543952349.781946)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16866976
+No: 107	GFLOPS: 177.6269/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0006508333316455697,), error_no=0, all_cost=1.9689953327178955, timestamp=1543952351.4003117)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29308576
+No: 108	GFLOPS: 198.8925/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0005812462227848101,), error_no=0, all_cost=1.76340651512146, timestamp=1543952352.8923619)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4425376
+No: 109	GFLOPS: 469.6024/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00024617740319361276,), error_no=0, all_cost=1.4284002780914307, timestamp=1543952410.5527053)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17112376
+No: 110	GFLOPS: 473.0918/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002443616526946108,), error_no=0, all_cost=1.3852603435516357, timestamp=1543952411.6267114)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4670776
+No: 111	GFLOPS: 469.6613/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00024614653293413176,), error_no=0, all_cost=1.5121235847473145, timestamp=1543952412.7545044)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29553976
+No: 112	GFLOPS: 158.7304/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0007283134025316456,), error_no=0, all_cost=1.8893074989318848, timestamp=1543952357.7897558)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,2828070
+No: 113	GFLOPS: 162.9852/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.000709300794936709,), error_no=0, all_cost=2.224008321762085, timestamp=1543952359.5514376)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,27711270
+No: 114	GFLOPS: 162.9537/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.000709437893670886,), error_no=0, all_cost=1.9290897846221924, timestamp=1543952361.1562386)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,15269670
+No: 115	GFLOPS: 154.6244/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0007476538075949367,), error_no=0, all_cost=2.1145944595336914, timestamp=1543952362.89686)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17128816
+No: 116	GFLOPS: 154.6478/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0007475406658227848,), error_no=0, all_cost=2.0389697551727295, timestamp=1543952364.5596995)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29570416
+No: 117	GFLOPS: 149.7831/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0007718191594936709,), error_no=0, all_cost=2.1160247325897217, timestamp=1543952366.345768)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16668016
+No: 118	GFLOPS: 140.1693/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.000824756324050633,), error_no=0, all_cost=2.2362921237945557, timestamp=1543952368.2009642)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [128, 2, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,20785096
+No: 119	GFLOPS: 84.3362/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0013707700784810126,), error_no=0, all_cost=2.680757999420166, timestamp=1543952370.60751)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [128, 2, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,8343496
+No: 120	GFLOPS: 140.2055/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0008245434810126582,), error_no=0, all_cost=2.1076769828796387, timestamp=1543952372.349859)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [128, 2, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33226696
+No: 121	GFLOPS: 323.7446/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003570886405063291,), error_no=0, all_cost=1.6020755767822266, timestamp=1543952373.5366123)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,339616
+No: 122	GFLOPS: 352.3670/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003280826658227848,), error_no=0, all_cost=1.6291379928588867, timestamp=1543952374.8394773)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25222816
+No: 123	GFLOPS: 322.9096/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00035801198987341776,), error_no=0, all_cost=1.6680572032928467, timestamp=1543952376.1396782)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12781216
+No: 124	GFLOPS: 249.9794/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0004624602126582279,), error_no=0, all_cost=1.5596685409545898, timestamp=1543952377.4456294)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [256, 1, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4164976
+No: 125	GFLOPS: 257.5280/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0004489046303797468,), error_no=0, all_cost=1.6140906810760498, timestamp=1543952378.7329931)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [256, 1, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29048176
+No: 126	GFLOPS: 428.9533/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002695060329113924,), error_no=0, all_cost=1.3730854988098145, timestamp=1543952379.8129163)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16866615
+No: 127	GFLOPS: 428.9451/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00026951118481012657,), error_no=0, all_cost=1.2684082984924316, timestamp=1543952380.8563735)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29308215
+No: 128	GFLOPS: 435.9247/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.000265196035443038,), error_no=0, all_cost=1.335559606552124, timestamp=1543952381.9283733)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4425015
+No: 129	GFLOPS: 432.3054/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0002674162835443038,), error_no=0, all_cost=1.4042479991912842, timestamp=1543952383.0375593)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,6913335
+No: 130	GFLOPS: 306.9106/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003766748607594937,), error_no=0, all_cost=1.5471203327178955, timestamp=1543952384.3010538)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12780981
+No: 131	GFLOPS: 307.1246/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00037641243797468355,), error_no=0, all_cost=2.390674114227295, timestamp=1543952386.3531435)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25222581
+No: 132	GFLOPS: 289.5691/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003992328683544304,), error_no=0, all_cost=1.5974361896514893, timestamp=1543952387.6324599)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,339381
+No: 133	GFLOPS: 382.2318/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003024486936708861,), error_no=0, all_cost=1.603856086730957, timestamp=1543952388.8504355)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33257055
+No: 134	GFLOPS: 153.7793/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0007517625518987342,), error_no=0, all_cost=2.1473066806793213, timestamp=1543952390.6331136)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25208781
+No: 135	GFLOPS: 136.3523/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0008478442151898733,), error_no=0, all_cost=2.1421804428100586, timestamp=1543952392.480341)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,325581
+No: 136	GFLOPS: 128.5831/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0008990724329113925,), error_no=0, all_cost=2.2467007637023926, timestamp=1543952394.3961718)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12767181
+No: 137	GFLOPS: 222.4054/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0005197963797468354,), error_no=0, all_cost=1.6490435600280762, timestamp=1543952395.7771814)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,325576
+No: 138	GFLOPS: 218.9173/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0005280784556962025,), error_no=0, all_cost=1.8408105373382568, timestamp=1543952397.27639)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25208776
+No: 139	GFLOPS: 218.4599/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0005291840734177215,), error_no=0, all_cost=1.7282185554504395, timestamp=1543952398.7072814)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12767176
+No: 140	GFLOPS: 341.0573/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00033896211645569616,), error_no=0, all_cost=1.482771635055542, timestamp=1543952399.904654)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,8374590
+No: 141	GFLOPS: 335.7701/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0003442995848101266,), error_no=0, all_cost=1.6723051071166992, timestamp=1543952401.247012)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33257790
+No: 142	GFLOPS: 276.3573/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00041831901012658225,), error_no=0, all_cost=1.639970302581787, timestamp=1543952402.5954692)	[('tile_f', [4, 1, 32, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,20816190
+No: 143	GFLOPS: 247.5215/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.00046705242784810127,), error_no=0, all_cost=1.503396987915039, timestamp=1543952403.8839624)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4209741
+No: 144	GFLOPS: 247.7512/570.7042	cost: 0.0002	result: MeasureResult(costs=(0.0004666192708860759,), error_no=0, all_cost=1.6350665092468262, timestamp=1543952405.2301872)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,16651341
+TIME: 642.7178437709808, about to update
+XGBOOST START CALLBACK
+XGB iter:   0	tr-a-recall@64: 0.458192	tr-map: 0.017241
+XGBOOST DONE CALLBACK: 0.005594968795776367
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011813640594482422
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011706352233886719
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001176595687866211
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011949539184570312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011823177337646484
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011484622955322266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011692047119140625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011663436889648438
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011475086212158203
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011720657348632812
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011360645294189453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011336803436279297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011382102966308594
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011315345764160156
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011601448059082031
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011508464813232422
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011572837829589844
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001146554946899414
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011398792266845703
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011413097381591797
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011675357818603516
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011463165283203125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011653900146484375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011434555053710938
+XGBOOST START CALLBACK
+XGB iter:  25	tr-a-recall@64: 0.858539	tr-map: 0.500000
+XGBOOST DONE CALLBACK: 0.0013623237609863281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012097358703613281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001234292984008789
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012154579162597656
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012164115905761719
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012040138244628906
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011904239654541016
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012047290802001953
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011844635009765625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001157522201538086
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00115203857421875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011515617370605469
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011410713195800781
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011637210845947266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011410713195800781
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011484622955322266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011472702026367188
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011470317840576172
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011644363403320312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011703968048095703
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011987686157226562
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011444091796875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001154184341430664
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011525154113769531
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011508464813232422
+XGBOOST START CALLBACK
+XGB iter:  50	tr-a-recall@64: 0.881530	tr-map: 1.000000
+XGBOOST DONE CALLBACK: 0.0012023448944091797
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001194000244140625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012218952178955078
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012285709381103516
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012295246124267578
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012316703796386719
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011937618255615234
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012295246124267578
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012390613555908203
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012314319610595703
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012292861938476562
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012056827545166016
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012276172637939453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001237630844116211
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001256704330444336
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012309551239013672
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012080669403076172
+XGBOOST START CALLBACK
+XGB stopped. Best iteration: [47] tr-a-recall@64:0.888601	tr-map:1 
+XGB train: 1.20	obs: 144	error: 68	n_cache: 53910
+SA iter: 50	last_update: 49	max-0: 5.91	max-1: 7.90	temp: 0.90	elapsed: 19.88
+SA iter: 100	last_update: 98	max-0: 6.31	max-1: 7.90	temp: 0.80	elapsed: 42.88
+SA iter: 150	last_update: 147	max-0: 6.44	max-1: 7.90	temp: 0.70	elapsed: 61.47
+SA iter: 200	last_update: 198	max-0: 6.56	max-1: 7.90	temp: 0.60	elapsed: 85.41
+SA iter: 250	last_update: 248	max-0: 6.74	max-1: 7.96	temp: 0.50	elapsed: 104.72
+SA iter: 300	last_update: 299	max-0: 6.95	max-1: 7.96	temp: 0.40	elapsed: 123.17
+SA iter: 350	last_update: 346	max-0: 7.03	max-1: 8.38	temp: 0.30	elapsed: 140.56
+SA iter: 400	last_update: 399	max-0: 7.16	max-1: 8.38	temp: 0.20	elapsed: 157.97
+SA iter: 450	last_update: 443	max-0: 7.21	max-1: 8.38	temp: 0.10	elapsed: 173.74
+SA iter: 500	last_update: 480	max-0: 7.24	max-1: 8.38	temp: 0.00	elapsed: 187.22
+SA iter: 500	last_update: 480	max-0: 7.24	max-1: 8.38	elapsed: 187.22
+SA Maximums: [(8.3829155, 66878781), (8.3829155, 29553981), (8.079048, 41995581), (8.079048, 4670781), (8.069569, 54437181), (8.069569, 17112381), (7.9625583, 66878776), (7.899526, 41995576), (7.8747344, 42012261), (7.865256, 54453861), (7.8207498, 54437176), (7.795339, 66895461), (7.6485686, 41995575), (7.6485686, 4670775), (7.579738, 66663741), (7.579738, 29338941), (7.551186, 45944421), (7.551186, 8619621), (7.533714, 29570666), (7.533714, 66895466), (7.4461427, 4472421), (7.4461427, 41797221), (7.4444394, 58386021), (7.4444394, 21061221), (7.425982, 54437175), (7.425982, 17112375), (7.421004, 8602341), (7.421004, 45927141), (7.401386, 42012266), (7.401386, 4687466), (7.396233, 42012294), (7.3919063, 54453866), (7.3919063, 17129066), (7.3867545, 54453894), (7.3867545, 17129094), (7.3305125, 29355621), (7.3305125, 66680421), (7.316838, 66895494), (7.316838, 29570694), (7.314258, 21043941), (7.314258, 58368741), (7.312367, 31796541), (7.312367, 69121341), (7.3121047, 4455741), (7.3121047, 41780541), (7.3020597, 70827621), (7.3020597, 33502821), (7.278936, 69121336), (7.278936, 31796536), (7.269727, 29553986), (7.269727, 66878786), (7.262301, 46142181), (7.262301, 8817381), (7.258824, 8848221), (7.258824, 46173021), (7.2525, 6913341), (7.2525, 44238141), (7.249848, 54238821), (7.249848, 16914021), (7.2430205, 19354941), (7.2430205, 56679741), (7.2409925, 46172901), (7.2409925, 8848101), (7.2361317, 66417981)]
+TIME: 831.1440076828003, done update
+TIME: 831.1537182331085, done callbacks
+TIME: 831.1538648605347, number of trials = 144
+TIME: 831.1552519798279, get next batch count = 48
+TIME: 831.155588388443, constructed inputs
+increasing number to 912
+TIME: 931.5569949150085, measured batch
+No: 145	GFLOPS: 756.8845/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00015273862609649125,), error_no=0, all_cost=1.5335078239440918, timestamp=1543952659.29771)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66878781
+No: 146	GFLOPS: 608.6659/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00018993261184210527,), error_no=0, all_cost=1.5927298069000244, timestamp=1543952660.5843017)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29553981
+No: 147	GFLOPS: 579.7962/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00019938991228070176,), error_no=0, all_cost=1.5964665412902832, timestamp=1543952661.9083445)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41995581
+No: 148	GFLOPS: 577.5056/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00020018074342105263,), error_no=0, all_cost=1.597472906112671, timestamp=1543952663.2330296)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4670781
+No: 149	GFLOPS: 755.1550/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00015308844188596492,), error_no=0, all_cost=1.5064501762390137, timestamp=1543952664.394919)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54437181
+No: 150	GFLOPS: 609.7076/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.0001896081173245614,), error_no=0, all_cost=1.6045091152191162, timestamp=1543952665.677078)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17112381
+No: 151	GFLOPS: 435.4029/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00026551386626746503,), error_no=0, all_cost=1.7073898315429688, timestamp=1543952612.1167285)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66878776
+No: 152	GFLOPS: 480.5493/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.0002405694750499002,), error_no=0, all_cost=1.4448137283325195, timestamp=1543952613.2329273)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41995576
+No: 153	GFLOPS: 574.7222/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00020115024780701754,), error_no=0, all_cost=1.6182401180267334, timestamp=1543952667.0169375)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,42012261
+No: 154	GFLOPS: 644.9147/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00017925704824561404,), error_no=0, all_cost=1.65267014503479, timestamp=1543952668.297928)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54453861
+No: 155	GFLOPS: 435.8630/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.0002652335888223553,), error_no=0, all_cost=1.6100680828094482, timestamp=1543952616.6044686)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54437176
+No: 156	GFLOPS: 645.7480/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00017902573135964914,), error_no=0, all_cost=1.6809108257293701, timestamp=1543952669.5727472)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66895461
+No: 157	GFLOPS: 467.4867/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.00024729155888223554,), error_no=0, all_cost=1.520101547241211, timestamp=1543952618.8675401)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41995575
+No: 158	GFLOPS: 465.8953/756.8845	cost: 0.0002	result: MeasureResult(costs=(0.0002481362215568862,), error_no=0, all_cost=1.379716157913208, timestamp=1543952620.0308707)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4670775
+No: 159	GFLOPS: 802.8803/802.8803	cost: 0.0001	result: MeasureResult(costs=(0.0001439884605263158,), error_no=0, all_cost=1.4724888801574707, timestamp=1543952670.7357361)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66663741
+No: 160	GFLOPS: 650.6155/802.8803	cost: 0.0001	result: MeasureResult(costs=(0.00017768635635964913,), error_no=0, all_cost=1.5735142230987549, timestamp=1543952671.9991353)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29338941
+No: 161	GFLOPS: 596.7736/802.8803	cost: 0.0001	result: MeasureResult(costs=(0.00019371752083333332,), error_no=0, all_cost=1.5457053184509277, timestamp=1543952673.2555609)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,45944421
+No: 162	GFLOPS: 597.1603/802.8803	cost: 0.0001	result: MeasureResult(costs=(0.00019359208004385964,), error_no=0, all_cost=1.5660653114318848, timestamp=1543952674.5269327)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,8619621
+No: 163	GFLOPS: 842.1612/842.1612	cost: 0.0001	result: MeasureResult(costs=(0.0001372724166666667,), error_no=0, all_cost=1.414787769317627, timestamp=1543952675.641619)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29570666
+No: 164	GFLOPS: 1044.7808/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00011065048355263158,), error_no=0, all_cost=1.4556138515472412, timestamp=1543952676.7277822)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66895466
+No: 165	GFLOPS: 581.2494/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00019889141008771932,), error_no=0, all_cost=1.5899453163146973, timestamp=1543952678.052996)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4472421
+No: 166	GFLOPS: 577.0027/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00020035522368421052,), error_no=0, all_cost=1.5596473217010498, timestamp=1543952679.371285)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41797221
+No: 167	GFLOPS: 647.2510/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00017860999451754388,), error_no=0, all_cost=1.6549344062805176, timestamp=1543952680.6421733)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,58386021
+No: 168	GFLOPS: 581.2143/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0001989034024122807,), error_no=0, all_cost=1.6684436798095703, timestamp=1543952681.982023)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,21061221
+No: 169	GFLOPS: 497.8243/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00023222148303393212,), error_no=0, all_cost=1.5172746181488037, timestamp=1543952632.8580701)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54437175
+No: 170	GFLOPS: 453.2550/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0002550562255489022,), error_no=0, all_cost=1.5521044731140137, timestamp=1543952634.109625)	[('tile_f', [32, 1, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17112375
+No: 171	GFLOPS: 775.1218/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00014914494298245612,), error_no=0, all_cost=1.4160606861114502, timestamp=1543952683.160571)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,8602341
+No: 172	GFLOPS: 777.4891/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00014869082675438594,), error_no=0, all_cost=1.4606287479400635, timestamp=1543952684.3496227)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,45927141
+No: 173	GFLOPS: 768.1434/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00015049990021929826,), error_no=0, all_cost=1.4787814617156982, timestamp=1543952685.5240884)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,42012266
+No: 174	GFLOPS: 767.6630/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00015059407894736843,), error_no=0, all_cost=1.4536442756652832, timestamp=1543952686.6993446)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4687466
+No: 175	GFLOPS: 586.1219/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0001972379769736842,), error_no=0, all_cost=1.6094529628753662, timestamp=1543952688.0378273)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,42012294
+No: 176	GFLOPS: 1039.5130/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00011121121271929825,), error_no=0, all_cost=1.4286909103393555, timestamp=1543952689.1211581)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54453866
+No: 177	GFLOPS: 837.1512/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00013809393969298246,), error_no=0, all_cost=1.3934695720672607, timestamp=1543952690.2632425)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17129066
+No: 178	GFLOPS: 546.0163/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00021172535928143713,), error_no=0, all_cost=1.5775189399719238, timestamp=1543952642.508658)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54453894
+No: 179	GFLOPS: 574.5748/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00020120183832335328,), error_no=0, all_cost=1.5332567691802979, timestamp=1543952643.7051418)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17129094
+No: 180	GFLOPS: 578.7344/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0001997557265469062,), error_no=0, all_cost=1.4643492698669434, timestamp=1543952644.8607478)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29355621
+No: 181	GFLOPS: 640.5108/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00018048953618421054,), error_no=0, all_cost=1.7264792919158936, timestamp=1543952691.543735)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66680421
+No: 182	GFLOPS: 543.6075/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00021266354091816365,), error_no=0, all_cost=1.5268409252166748, timestamp=1543952647.1263938)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66895494
+No: 183	GFLOPS: 573.8400/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0002014594890219561,), error_no=0, all_cost=1.4250283241271973, timestamp=1543952648.2483578)	[('tile_f', [8, 1, 8, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 1, 4]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29570694
+No: 184	GFLOPS: 771.3722/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.0001498699451754386,), error_no=0, all_cost=1.4914188385009766, timestamp=1543952692.7286272)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,21043941
+No: 185	GFLOPS: 930.3661/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00012425808223684212,), error_no=0, all_cost=1.3818352222442627, timestamp=1543952693.8177693)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,58368741
+No: 186	GFLOPS: 587.5474/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00019675946052631578,), error_no=0, all_cost=1.6125924587249756, timestamp=1543952695.1527395)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,31796541
+No: 187	GFLOPS: 622.7191/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00018564630701754388,), error_no=0, all_cost=1.5377423763275146, timestamp=1543952696.4163256)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,69121341
+No: 188	GFLOPS: 600.4535/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00019253031907894737,), error_no=0, all_cost=1.4890553951263428, timestamp=1543952697.6952736)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4455741
+No: 189	GFLOPS: 596.6924/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00019374386951754387,), error_no=0, all_cost=1.5490310192108154, timestamp=1543952698.9976652)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41780541
+No: 190	GFLOPS: 647.8016/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00017845818859649123,), error_no=0, all_cost=1.664377212524414, timestamp=1543952700.2324278)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,70827621
+No: 191	GFLOPS: 581.6524/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00019875359649122807,), error_no=0, all_cost=1.6885366439819336, timestamp=1543952701.5907786)	[('tile_f', [16, 1, 8, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33502821
+No: 192	GFLOPS: 449.7630/1044.7808	cost: 0.0001	result: MeasureResult(costs=(0.00025703648502994013,), error_no=0, all_cost=1.4979469776153564, timestamp=1543952658.0912113)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,69121336
+TIME: 932.3099267482758, about to update
+XGBOOST START CALLBACK
+XGB iter:   0	tr-a-recall@64: 0.482257	tr-map: 0.045455
+XGBOOST DONE CALLBACK: 0.004576921463012695
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0015726089477539062
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0015630722045898438
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0017440319061279297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001483917236328125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014753341674804688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001459360122680664
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014448165893554688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014536380767822266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014433860778808594
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014500617980957031
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00147247314453125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014910697937011719
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014693737030029297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001470327377319336
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014426708221435547
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014455318450927734
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014767646789550781
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014488697052001953
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001466512680053711
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001462697982788086
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001447439193725586
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014543533325195312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014896392822265625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014414787292480469
+XGBOOST START CALLBACK
+XGB iter:  25	tr-a-recall@64: 0.857627	tr-map: 1.000000
+XGBOOST DONE CALLBACK: 0.0015232563018798828
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014548301696777344
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014383792877197266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014505386352539062
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001451730728149414
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014595985412597656
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014338493347167969
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014472007751464844
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014564990997314453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014667510986328125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001453399658203125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014495849609375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014553070068359375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014681816101074219
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001439809799194336
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014548301696777344
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014545917510986328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0014536380767822266
+XGBOOST START CALLBACK
+XGB stopped. Best iteration: [23] tr-a-recall@64:0.870344	tr-map:1 
+XGB train: 2.58	obs: 192	error: 68	n_cache: 6301
+
+python3 tune_conv2d_cuda_itervar_n1000.py 2>&1  6590.27s user 330.62s system 31% cpu 6:09:38.54 total
+tee log_bottleneck_n1000.txt  0.01s user 0.01s system 0% cpu 6:09:35.82 total

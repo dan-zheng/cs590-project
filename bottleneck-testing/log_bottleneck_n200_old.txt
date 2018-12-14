@@ -1,0 +1,237 @@
+ConfigSpace (len=74649600, space_map=
+   0 tile_f: Split(policy=all, product=128, num_outputs=4) len=120
+   1 tile_y: Split(policy=all, product=14, num_outputs=4) len=16
+   2 tile_x: Split(policy=all, product=14, num_outputs=4) len=16
+   3 tile_rc: Split(policy=all, product=256, num_outputs=3) len=45
+   4 tile_ry: Split(policy=all, product=3, num_outputs=3) len=3
+   5 tile_rx: Split(policy=all, product=3, num_outputs=3) len=3
+   6 auto_unroll_max_step: OtherOption([0, 512, 1500]) len=3
+   7 unroll_explicit: OtherOption([0, 1]) len=2
+)
+Get devices for measurement successfully!
+TOTAL TRIAL COUNT = 200
+TIME: 8.821487426757812e-06, number of trials = 0
+TIME: 0.002969980239868164, get next batch count = 48
+TIME: 0.0032296180725097656, constructed inputs
+increasing number to 350
+increasing number to 355
+TIME: 82.09250402450562, measured batch
+No: 1	GFLOPS: 4.1123/4.1123	cost: 0.0281	result: MeasureResult(costs=(0.0281121325,), error_no=0, all_cost=4.34436297416687, timestamp=1543951517.4484317)	[('tile_f', [8, 8, 1, 2]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,54223119
+No: 2	GFLOPS: 0.0000/4.1123	cost: 0.0281	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.130950927734375, timestamp=1543951508.02812)	[('tile_f', [8, 4, 2, 2]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [1, 256, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,68010645
+No: 3	GFLOPS: 0.0000/4.1123	cost: 0.0281	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.037224531173706055, timestamp=1543951508.02823)	[('tile_f', [1, 8, 4, 4]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [2, 128, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29274438
+No: 4	GFLOPS: 52.9228/52.9228	cost: 0.0022	result: MeasureResult(costs=(0.0021844158314285717,), error_no=0, all_cost=3.3152713775634766, timestamp=1543951536.6250954)	[('tile_f', [1, 4, 2, 16]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,41549386
+No: 5	GFLOPS: 0.0000/52.9228	cost: 0.0022	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.034482479095458984, timestamp=1543951508.028397)	[('tile_f', [1, 128, 1, 1]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [4, 4, 16]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,49394167
+No: 6	GFLOPS: 3.2564/52.9228	cost: 0.0022	result: MeasureResult(costs=(0.035501376,), error_no=0, all_cost=3.4525883197784424, timestamp=1543951519.8306873)	[('tile_f', [64, 1, 2, 1]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [4, 1, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,74490248
+No: 7	GFLOPS: 0.0000/52.9228	cost: 0.0022	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.10221195220947266, timestamp=1543951508.0285556)	[('tile_f', [1, 1, 32, 4]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 64, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,66824604
+No: 8	GFLOPS: 0.0000/52.9228	cost: 0.0022	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.11308813095092773, timestamp=1543951508.0286176)	[('tile_f', [4, 2, 2, 8]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,57957091
+No: 9	GFLOPS: 210.3394/210.3394	cost: 0.0005	result: MeasureResult(costs=(0.0005496140657142857,), error_no=0, all_cost=2.0117881298065186, timestamp=1543951537.8894827)	[('tile_f', [4, 2, 8, 2]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,62547535
+No: 10	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03530097007751465, timestamp=1543951508.0287583)	[('tile_f', [2, 16, 4, 1]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,22936459
+No: 11	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.047400712966918945, timestamp=1543951508.0288377)	[('tile_f', [2, 8, 1, 8]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [8, 16, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,30817408
+No: 12	GFLOPS: 188.6743/210.3394	cost: 0.0005	result: MeasureResult(costs=(0.0006127252942857142,), error_no=0, all_cost=1.580549955368042, timestamp=1543951539.1697283)	[('tile_f', [1, 4, 32, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,39023552
+No: 13	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04835915565490723, timestamp=1543951508.0289738)	[('tile_f', [1, 1, 128, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [32, 2, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,68312435
+No: 14	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.10996890068054199, timestamp=1543951508.0290406)	[('tile_f', [8, 1, 1, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,74528140
+No: 15	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(TimeoutError(),), error_no=6, all_cost=10, timestamp=1543951515.4558275)	[('tile_f', [32, 4, 1, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [16, 1, 16]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,72834002
+No: 16	GFLOPS: 0.0000/210.3394	cost: 0.0005	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03993535041809082, timestamp=1543951515.4559503)	[('tile_f', [1, 2, 2, 32]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [1, 8, 32]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,30223074
+No: 17	GFLOPS: 407.3999/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.00028376416619718307,), error_no=0, all_cost=1.3444476127624512, timestamp=1543951587.2910352)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [64, 4, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,19419626
+No: 18	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03692007064819336, timestamp=1543951515.4560878)	[('tile_f', [2, 1, 1, 64]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [2, 1, 128]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,38634836
+No: 19	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.044312477111816406, timestamp=1543951515.456146)	[('tile_f', [1, 2, 64, 1]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 32, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,28539274
+No: 20	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03597664833068848, timestamp=1543951515.4562075)	[('tile_f', [1, 1, 8, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [8, 2, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,13406869
+No: 21	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04191470146179199, timestamp=1543951515.4562635)	[('tile_f', [1, 2, 2, 32]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [16, 1, 16]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,56247594
+No: 22	GFLOPS: 12.8904/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.008968314268571429,), error_no=0, all_cost=15.247477531433105, timestamp=1543951550.7499459)	[('tile_f', [4, 4, 4, 2]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [16, 2, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,28425891
+No: 23	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.8185436725616455, timestamp=1543951515.4563942)	[('tile_f', [4, 4, 1, 8]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [8, 4, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,68551047
+No: 24	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03327202796936035, timestamp=1543951515.4564497)	[('tile_f', [2, 1, 64, 1]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,8276193
+No: 25	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.25199151039123535, timestamp=1543951515.4565122)	[('tile_f', [1, 16, 4, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 32, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,73950893
+No: 26	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.046301841735839844, timestamp=1543951515.4565735)	[('tile_f', [8, 1, 4, 4]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [2, 64, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12913275
+No: 27	GFLOPS: 1.1938/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.09684035825,), error_no=0, all_cost=4.114629030227661, timestamp=1543951527.5879722)	[('tile_f', [8, 2, 1, 8]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29122526
+No: 28	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03228402137756348, timestamp=1543951515.4566894)	[('tile_f', [8, 1, 1, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [2, 1, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,48310540
+No: 29	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.053388357162475586, timestamp=1543951515.4567387)	[('tile_f', [32, 2, 2, 1]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [2, 2, 64]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,27498489
+No: 30	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.032852888107299805, timestamp=1543951515.4567897)	[('tile_f', [1, 64, 1, 2]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [1, 4, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,24783882
+No: 31	GFLOPS: 9.2727/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.012467231680000001,), error_no=0, all_cost=14.679434776306152, timestamp=1543951564.615468)	[('tile_f', [2, 8, 1, 8]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [64, 4, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,47084368
+No: 32	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.035158634185791016, timestamp=1543951515.4569027)	[('tile_f', [1, 4, 1, 32]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [1, 2, 128]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40044952
+No: 33	GFLOPS: 18.1009/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.006386727782857143,), error_no=0, all_cost=7.893817186355591, timestamp=1543951572.0696535)	[('tile_f', [2, 1, 2, 32]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [32, 1, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,14561513
+No: 34	GFLOPS: 285.2615/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.00040526154,), error_no=0, all_cost=1.344223976135254, timestamp=1543951573.1219437)	[('tile_f', [1, 1, 16, 8]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,26268579
+No: 35	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.18392252922058105, timestamp=1543951515.4570763)	[('tile_f', [8, 4, 4, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [8, 32, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,51319217
+No: 36	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.20809006690979004, timestamp=1543951515.4571388)	[('tile_f', [8, 2, 4, 2]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [16, 8, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,70897730
+No: 37	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.18285727500915527, timestamp=1543951515.457198)	[('tile_f', [1, 1, 64, 2]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [1, 128, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,68232663
+No: 38	GFLOPS: 43.2014/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0026759679085714286,), error_no=0, all_cost=4.084601640701294, timestamp=1543951576.668694)	[('tile_f', [4, 2, 8, 2]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [32, 4, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,12782695
+No: 39	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.030376911163330078, timestamp=1543951515.4573104)	[('tile_f', [4, 1, 1, 32]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 8, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,2568230
+No: 40	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.2065901756286621, timestamp=1543951515.4573655)	[('tile_f', [16, 4, 1, 2]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,70492478
+No: 41	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.08710122108459473, timestamp=1543951515.4574223)	[('tile_f', [32, 1, 2, 2]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 4, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17866363
+No: 42	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.09108996391296387, timestamp=1543951515.4574778)	[('tile_f', [1, 2, 8, 8]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [2, 32, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,2075618
+No: 43	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.22481179237365723, timestamp=1543951515.457529)	[('tile_f', [2, 4, 1, 16]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [8, 1, 32]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,74371542
+No: 44	GFLOPS: 13.5385/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.008539033857142858,), error_no=0, all_cost=10.018742561340332, timestamp=1543951586.3029757)	[('tile_f', [16, 4, 2, 1]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [16, 1, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,5093170
+No: 45	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.5105235576629639, timestamp=1543951515.4576435)	[('tile_f', [4, 4, 4, 2]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [1, 1, 1, 14]), ('tile_rc', [8, 16, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,68166411
+No: 46	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.044670820236206055, timestamp=1543951515.4576976)	[('tile_f', [4, 8, 4, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [4, 2, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,31523418
+No: 47	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.21785950660705566, timestamp=1543951515.4577472)	[('tile_f', [1, 16, 2, 4]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [1, 8, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,64777514
+No: 48	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(TimeoutError(),), error_no=6, all_cost=10, timestamp=1543951515.7490337)	[('tile_f', [1, 32, 1, 4]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 7, 2, 1]), ('tile_rc', [128, 2, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,11100789
+TIME: 82.09729361534119, about to update
+TIME: 82.09758806228638, done update
+TIME: 82.10184073448181, done callbacks
+TIME: 82.10213160514832, number of trials = 48
+TIME: 82.10350751876831, get next batch count = 48
+TIME: 82.10371255874634, constructed inputs
+TIME: 371.2950463294983, measured batch
+No: 49	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.07890725135803223, timestamp=1543951587.7643192)	[('tile_f', [2, 2, 8, 4]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [4, 64, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7121240
+No: 50	GFLOPS: 204.8096/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0005644534704225353,), error_no=0, all_cost=2.258660316467285, timestamp=1543951598.6160893)	[('tile_f', [8, 2, 4, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [16, 2, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25659050
+No: 51	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.09140944480895996, timestamp=1543951588.2545276)	[('tile_f', [8, 1, 2, 8]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [2, 64, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,3246450
+No: 52	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.08152103424072266, timestamp=1543951588.2546003)	[('tile_f', [2, 8, 8, 1]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [1, 32, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,11953584
+No: 53	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.15487885475158691, timestamp=1543951588.2546525)	[('tile_f', [1, 1, 128, 1]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [2, 2, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,53780795
+No: 54	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:27:10] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=32.10015559196472, timestamp=1543951630.0272236)	[('tile_f', [2, 32, 1, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [16, 8, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,5923361
+No: 55	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06882905960083008, timestamp=1543951588.4331005)	[('tile_f', [2, 4, 1, 16]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 8, 16]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,31435542
+No: 56	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.041337013244628906, timestamp=1543951588.4331827)	[('tile_f', [8, 1, 2, 8]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [2, 2, 64]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,37188210
+No: 57	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.059298038482666016, timestamp=1543951588.4332519)	[('tile_f', [1, 1, 64, 2]), ('tile_y', [7, 2, 1, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 32, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,44920503
+No: 58	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.13729310035705566, timestamp=1543951588.433331)	[('tile_f', [2, 8, 4, 2]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [4, 2, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,56417332
+No: 59	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.051132917404174805, timestamp=1543951588.4333975)	[('tile_f', [1, 32, 2, 2]), ('tile_y', [1, 2, 1, 7]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [16, 2, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,10463688
+No: 60	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:27:41] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=40.732725620269775, timestamp=1543951661.550399)	[('tile_f', [1, 32, 4, 1]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [16, 1, 16]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,64535300
+No: 61	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.14763879776000977, timestamp=1543951597.0798056)	[('tile_f', [2, 16, 4, 1]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [2, 16, 8]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,56177179
+No: 62	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.1384258270263672, timestamp=1543951597.0798976)	[('tile_f', [1, 8, 16, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [1, 14, 1, 1]), ('tile_rc', [16, 4, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,24090989
+No: 63	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.11560297012329102, timestamp=1543951597.0799804)	[('tile_f', [4, 2, 16, 1]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [4, 64, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,19561947
+No: 64	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.1262505054473877, timestamp=1543951597.080068)	[('tile_f', [8, 4, 4, 1]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 32, 8]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,67246097
+No: 65	GFLOPS: 134.2007/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0008614376140845069,), error_no=0, all_cost=2.1994543075561523, timestamp=1543951663.4379957)	[('tile_f', [2, 8, 4, 2]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [256, 1, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,17989852
+No: 66	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.4815242290496826, timestamp=1543951597.0802443)	[('tile_f', [2, 2, 4, 8]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 256, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,72144095
+No: 67	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.031966209411621094, timestamp=1543951597.0803306)	[('tile_f', [8, 16, 1, 1]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [2, 32, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,43539124
+No: 68	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.06600570678710938, timestamp=1543951597.0804164)	[('tile_f', [1, 16, 1, 8]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [4, 2, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,60565409
+No: 69	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.09266519546508789, timestamp=1543951597.0804958)	[('tile_f', [8, 4, 1, 4]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [1, 16, 16]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,53589546
+No: 70	GFLOPS: 350.0824/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0003302236647887324,), error_no=0, all_cost=1.5355205535888672, timestamp=1543951664.8231325)	[('tile_f', [32, 1, 1, 4]), ('tile_y', [1, 1, 2, 7]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,43386064
+No: 71	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.0323488712310791, timestamp=1543951597.0806537)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [4, 32, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7354466
+No: 72	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.027188777923583984, timestamp=1543951597.0807245)	[('tile_f', [1, 1, 64, 2]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [1, 256, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,45882543
+No: 73	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04205775260925293, timestamp=1543951597.0807946)	[('tile_f', [1, 4, 32, 1]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [7, 1, 1, 2]), ('tile_rc', [2, 32, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,24194192
+No: 74	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03335833549499512, timestamp=1543951597.0808737)	[('tile_f', [4, 4, 4, 2]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33146931
+No: 75	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:28:16] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=31.678754329681396, timestamp=1543951696.2832382)	[('tile_f', [4, 1, 1, 32]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [8, 1, 32]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,6604910
+No: 76	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.28094983100891113, timestamp=1543951597.0810554)	[('tile_f', [2, 1, 4, 16]), ('tile_y', [1, 1, 7, 2]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [4, 32, 2]), ('tile_ry', [1, 3, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,51601427
+No: 77	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03724241256713867, timestamp=1543951597.0811267)	[('tile_f', [4, 32, 1, 1]), ('tile_y', [1, 2, 7, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [4, 4, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,13444685
+No: 78	GFLOPS: 210.7358/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0005485802056338027,), error_no=0, all_cost=1.6126689910888672, timestamp=1543951697.6940923)	[('tile_f', [16, 2, 4, 1]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,323536
+No: 79	GFLOPS: 12.8742/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.008979606,), error_no=0, all_cost=15.97702693939209, timestamp=1543951711.247008)	[('tile_f', [4, 1, 1, 32]), ('tile_y', [7, 1, 1, 2]), ('tile_x', [1, 2, 7, 1]), ('tile_rc', [64, 1, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,36479270
+No: 80	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04605984687805176, timestamp=1543951597.081357)	[('tile_f', [1, 2, 1, 64]), ('tile_y', [1, 7, 2, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [16, 2, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,40885197
+No: 81	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:29:02] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=31.953318119049072, timestamp=1543951742.5916033)	[('tile_f', [4, 8, 1, 4]), ('tile_y', [2, 7, 1, 1]), ('tile_x', [2, 1, 1, 7]), ('tile_rc', [16, 16, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,37471027
+No: 82	GFLOPS: 184.6947/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0006259274422535211,), error_no=0, all_cost=2.1995081901550293, timestamp=1543951744.1241825)	[('tile_f', [2, 1, 4, 16]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [16, 8, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,25255787
+No: 83	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.05540823936462402, timestamp=1543951597.081588)	[('tile_f', [8, 1, 16, 1]), ('tile_y', [1, 14, 1, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [4, 8, 8]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 1)],,None,57510146
+No: 84	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.5902864933013916, timestamp=1543951597.0816832)	[('tile_f', [4, 2, 1, 16]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [7, 2, 1, 1]), ('tile_rc', [8, 16, 2]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 1)],,None,73669541
+No: 85	GFLOPS: 4.8683/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.023746512622535212,), error_no=0, all_cost=27.107377767562866, timestamp=1543951770.6685715)	[('tile_f', [4, 16, 1, 2]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [1, 1, 7, 2]), ('tile_rc', [16, 16, 1]), ('tile_ry', [1, 3, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,18116680
+No: 86	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03514385223388672, timestamp=1543951597.081831)	[('tile_f', [1, 2, 1, 64]), ('tile_y', [1, 1, 14, 1]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [16, 16, 1]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,7062837
+No: 87	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04316973686218262, timestamp=1543951597.081909)	[('tile_f', [2, 4, 2, 8]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [7, 1, 2, 1]), ('tile_rc', [1, 16, 16]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 1)],,None,45289772
+No: 88	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:30:02] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=32.27487635612488, timestamp=1543951802.048781)	[('tile_f', [4, 32, 1, 1]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 1, 2, 7]), ('tile_rc', [64, 4, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4236725
+No: 89	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(RuntimeError('[14:30:33] /homes/zheng321/tvm/src/runtime/rpc/rpc_session.cc:942: Check failed: code == RPCCode::kReturn code=4\n\n',),), error_no=4, all_cost=32.922486543655396, timestamp=1543951833.3964772)	[('tile_f', [4, 4, 2, 4]), ('tile_y', [1, 7, 1, 2]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [64, 2, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4474872
+No: 90	GFLOPS: 255.9850/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0004516105098591549,), error_no=0, all_cost=1.4729118347167969, timestamp=1543951834.6191537)	[('tile_f', [1, 4, 32, 1]), ('tile_y', [7, 1, 2, 1]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [128, 1, 2]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29307392
+No: 91	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.04286456108093262, timestamp=1543951597.0821927)	[('tile_f', [2, 2, 2, 16]), ('tile_y', [1, 1, 1, 14]), ('tile_x', [1, 2, 1, 7]), ('tile_rc', [1, 1, 256]), ('tile_ry', [1, 1, 3]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,33173745
+No: 92	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.029630184173583984, timestamp=1543951597.0822768)	[('tile_f', [1, 1, 64, 2]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [1, 1, 14, 1]), ('tile_rc', [1, 256, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 1500), ('unroll_explicit', 0)],,None,29291583
+No: 93	GFLOPS: 19.1947/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.006022788290140845,), error_no=0, all_cost=7.5535407066345215, timestamp=1543951841.9242094)	[('tile_f', [8, 2, 2, 4]), ('tile_y', [14, 1, 1, 1]), ('tile_x', [2, 1, 7, 1]), ('tile_rc', [2, 8, 16]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,5172551
+No: 94	GFLOPS: 4.6448/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.0248892906,), error_no=0, all_cost=28.333651542663574, timestamp=1543951869.5966365)	[('tile_f', [64, 2, 1, 1]), ('tile_y', [2, 1, 1, 7]), ('tile_x', [14, 1, 1, 1]), ('tile_rc', [4, 16, 4]), ('tile_ry', [1, 1, 3]), ('tile_rx', [3, 1, 1]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,15852961
+No: 95	GFLOPS: 20.3662/407.3999	cost: 0.0003	result: MeasureResult(costs=(0.005676332743661972,), error_no=0, all_cost=7.163717269897461, timestamp=1543951876.4443848)	[('tile_f', [16, 8, 1, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [2, 7, 1, 1]), ('tile_rc', [32, 8, 1]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 3, 1]), ('auto_unroll_max_step', 0), ('unroll_explicit', 0)],,None,4243923
+No: 96	GFLOPS: 0.0000/407.3999	cost: 0.0003	result: MeasureResult(costs=(InstantiationError('Skipped because of invalid gpu kernel',),), error_no=1, all_cost=0.03345489501953125, timestamp=1543951597.082555)	[('tile_f', [2, 64, 1, 1]), ('tile_y', [2, 1, 7, 1]), ('tile_x', [1, 7, 1, 2]), ('tile_rc', [4, 1, 64]), ('tile_ry', [3, 1, 1]), ('tile_rx', [1, 1, 3]), ('auto_unroll_max_step', 512), ('unroll_explicit', 0)],,None,21954006
+TIME: 371.304279088974, about to update
+XGBOOST START CALLBACK
+XGB iter:   0	tr-a-recall@64: 0.552397	tr-map: 0.166667
+XGBOOST DONE CALLBACK: 0.0038340091705322266
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0012507438659667969
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011818408966064453
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011491775512695312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011343955993652344
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00119781494140625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011444091796875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011103153228759766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001131296157836914
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010592937469482422
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010788440704345703
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010540485382080078
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010950565338134766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011174678802490234
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011074542999267578
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0011110305786132812
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010623931884765625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010688304901123047
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00106048583984375
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010771751403808594
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010867118835449219
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010395050048828125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.00119781494140625
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010418891906738281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010371208190917969
+XGBOOST START CALLBACK
+XGB iter:  25	tr-a-recall@64: 0.628089	tr-map: 0.500000
+XGBOOST DONE CALLBACK: 0.0011336803436279297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001039743423461914
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010814666748046875
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010528564453125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010609626770019531
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010266304016113281
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010633468627929688
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001096963882446289
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010728836059570312
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010361671447753906
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001024484634399414
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001035928726196289
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010294914245605469
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010287761688232422
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010607242584228516
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010640621185302734
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010273456573486328
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010559558868408203
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010340213775634766
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010399818420410156
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.001032114028930664
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010700225830078125
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010268688201904297
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010380744934082031
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010237693786621094
+XGBOOST START CALLBACK
+XGB iter:  50	tr-a-recall@64: 0.643530	tr-map: 0.250000
+XGBOOST DONE CALLBACK: 0.0011124610900878906
+XGBOOST START CALLBACK
+XGBOOST DONE CALLBACK: 0.0010280609130859375
+XGBOOST START CALLBACK
+XGB stopped. Best iteration: [32] tr-a-recall@64:0.660507	tr-map:1 
+XGB train: 1.04	obs: 96	error: 72	n_cache: 96
+SA iter: 50	last_update: 49	max-0: 6.38	max-1: 7.15	temp: 0.90	elapsed: 32.79
+SA iter: 100	last_update: 99	max-0: 6.64	max-1: 7.26	temp: 0.80	elapsed: 56.62
+SA iter: 150	last_update: 146	max-0: 6.75	max-1: 7.26	temp: 0.70	elapsed: 80.05
+SA iter: 200	last_update: 199	max-0: 6.80	max-1: 7.26	temp: 0.60	elapsed: 102.57
+SA iter: 250	last_update: 249	max-0: 6.85	max-1: 7.26	temp: 0.50	elapsed: 123.10

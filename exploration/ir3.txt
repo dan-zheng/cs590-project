@@ -1,0 +1,108 @@
+PRINTING IR
+produce compute {
+  // attr [iter_var(nn, )] pragma_auto_unroll_max_step = 512
+  // attr [iter_var(nn, )] pragma_unroll_explicit = 1
+  for (nn, 0, 1) {
+    // attr [iter_var(blockIdx.z, , blockIdx.z)] thread_extent = 2
+    // attr [iter_var(blockIdx.y, , blockIdx.y)] thread_extent = 1
+    // attr [iter_var(blockIdx.x, , blockIdx.x)] thread_extent = 1
+    // attr [iter_var(vthread, , vthread)] virtual_thread = 1
+    // attr [iter_var(vthread, , vthread)] virtual_thread = 1
+    // attr [iter_var(vthread, , vthread)] virtual_thread = 1
+    // attr [iter_var(threadIdx.z, , threadIdx.z)] thread_extent = 64
+    // attr [iter_var(threadIdx.y, , threadIdx.y)] thread_extent = 7
+    // attr [iter_var(threadIdx.x, , threadIdx.x)] thread_extent = 1
+    // attr [compute.local] storage_scope = "local"
+    allocate compute.local[float32 * 1 * 4 * 1 * 7]
+    produce compute.local {
+      for (rc.outer, 0, 8) {
+        for (ry.outer, 0, 1) {
+          for (rx.outer, 0, 1) {
+            // attr [pad_temp.shared] storage_scope = "shared"
+            allocate pad_temp.shared[float32 * 1 * 64 * 9 * 9]
+            produce pad_temp.shared {
+              // attr [iter_var(threadIdx.z, , threadIdx.z)] thread_extent = 64
+              // attr [iter_var(threadIdx.y, , threadIdx.y)] thread_extent = 7
+              // attr [iter_var(threadIdx.x, , threadIdx.x)] thread_extent = 1
+              for (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner, 0, 12) {
+                if (likely(((((((((threadIdx.z*81) + (threadIdx.y*12)) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9)/9)/64) < 1))) {
+                  if (likely(((((((((threadIdx.z*81) + (threadIdx.y*12)) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9)/9)/64) < 1))) {
+                    pad_temp.shared[((((threadIdx.z*81) + (((((threadIdx.y*12) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/81)*81)) + ((((threadIdx.y*3) + (threadIdx.x*3)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner) % 9)) + ((((((threadIdx.y*12) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9) % 9)*9))] = select(((((((((((threadIdx.z*81) + (threadIdx.y*12)) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9) % 9) >= 1) && (((((((threadIdx.z*81) + (threadIdx.y*12)) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9) % 9) < 8)) && (((((threadIdx.y*3) + (threadIdx.x*3)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner) % 9) >= 1)) && (((((threadIdx.y*3) + (threadIdx.x*3)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner) % 9) < 8)), data[((((((rc.outer*3136) + (((threadIdx.z + ((((threadIdx.y*12) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/81))/64)*25088)) + (((threadIdx.z + ((((threadIdx.y*12) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/81)) % 64)*49)) + ((((threadIdx.y*3) + (threadIdx.x*3)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner) % 9)) + ((((((threadIdx.y*12) + (threadIdx.x*12)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/9) % 9)*7)) - 8)], 0.000000f)
+                  }
+                }
+              }
+            }
+            // attr [kernel.shared] storage_scope = "shared"
+            allocate kernel.shared[float32 * 256 * 64 * 3 * 3]
+            produce kernel.shared {
+              // attr [iter_var(threadIdx.z, , threadIdx.z)] thread_extent = 64
+              // attr [iter_var(threadIdx.y, , threadIdx.y)] thread_extent = 7
+              // attr [iter_var(threadIdx.x, , threadIdx.x)] thread_extent = 1
+              for (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner, 0, 330) {
+                if (likely(((((((((threadIdx.z*2304) + (threadIdx.y*330)) + (threadIdx.x*330)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/3)/3)/64) < 256))) {
+                  if (likely((((blockIdx.z*256) + (((((((threadIdx.z*2304) + (threadIdx.y*330)) + (threadIdx.x*330)) + ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner)/3)/3)/64)) < 512))) {
+                    kernel.shared[(((((threadIdx.z*2304) + (((((threadIdx.y*110) + (threadIdx.x*110)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3))/192)*576)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner % 3)) + (((((threadIdx.y*2) + (threadIdx.x*2)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3)) % 3)*3)) + ((((((threadIdx.y*110) + (threadIdx.x*110)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3))/3) % 64)*9))] = kernel[(((((((blockIdx.z*1179648) + (rc.outer*576)) + (threadIdx.z*18432)) + (((((threadIdx.y*110) + (threadIdx.x*110)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3))/192)*4608)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner % 3)) + (((((threadIdx.y*2) + (threadIdx.x*2)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3)) % 3)*3)) + ((((((threadIdx.y*110) + (threadIdx.x*110)) + (ax0.ax1.fused.ax2.fused.ax3.fused.inner.inner.inner/3))/3) % 64)*9))]
+                  }
+                }
+              }
+            }
+            for (rc.inner.outer, 0, 2) {
+              for (ry.inner.outer, 0, 1) {
+                for (rx.inner.outer, 0, 1) {
+                  // attr [pad_temp.shared.local] storage_scope = "local"
+                  allocate pad_temp.shared.local[float32 * 1 * 32 * 3 * 9]
+                  produce pad_temp.shared.local {
+                    for (ax0, 0, 1) {
+                      for (ax1, 0, 32) {
+                        for (ax2, 0, 3) {
+                          for (ax3, 0, 9) {
+                            pad_temp.shared.local[((((ax0*864) + (ax1*27)) + (ax2*9)) + ax3)] = pad_temp.shared[((((((threadIdx.y*9) + (rc.inner.outer*2592)) + (ax0*5184)) + (ax1*81)) + (ax2*9)) + ax3)]
+                          }
+                        }
+                      }
+                    }
+                  }
+                  // attr [kernel.shared.local] storage_scope = "local"
+                  allocate kernel.shared.local[float32 * 4 * 32 * 3 * 3]
+                  produce kernel.shared.local {
+                    for (ax0, 0, 4) {
+                      for (ax1, 0, 32) {
+                        for (ax2, 0, 3) {
+                          for (ax3, 0, 3) {
+                            kernel.shared.local[((((ax0*288) + (ax1*9)) + (ax2*3)) + ax3)] = kernel.shared[((((((threadIdx.z*2304) + (rc.inner.outer*288)) + (ax0*576)) + (ax1*9)) + (ax2*3)) + ax3)]
+                          }
+                        }
+                      }
+                    }
+                  }
+                  for (rc.inner.inner, 0, 32) {
+                    for (ry.inner.inner, 0, 3) {
+                      for (rx.inner.inner, 0, 3) {
+                        for (nn.c, 0, 1) {
+                          for (ff.c, 0, 4) {
+                            for (yy.c, 0, 1) {
+                              for (xx.c, 0, 7) {
+                                compute.local[((((nn.c*28) + (ff.c*7)) + (yy.c*7)) + xx.c)] = (compute.local[((((nn.c*28) + (ff.c*7)) + (yy.c*7)) + xx.c)] + (pad_temp.shared.local[((((((((((ry.outer*27) + (rx.outer*3)) + (ry.inner.outer*27)) + (rx.inner.outer*3)) + (rc.inner.inner*27)) + (ry.inner.inner*9)) + rx.inner.inner) + (nn.c*864)) + (yy.c*9)) + xx.c)]*kernel.shared.local[((((((((ry.outer*9) + (rx.outer*3)) + (ry.inner.outer*9)) + (rx.inner.outer*3)) + (rc.inner.inner*9)) + (ry.inner.inner*3)) + rx.inner.inner) + (ff.c*288))]))
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    for (ff.inner.inner.inner, 0, 4) {
+      for (yy.inner.inner.inner, 0, 1) {
+        for (xx.inner.inner.inner, 0, 7) {
+          compute[(((((((((((((nn*25088) + (blockIdx.z*12544)) + (blockIdx.y*49)) + (blockIdx.x*7)) + (vthread*12544)) + (vthread*49)) + (vthread*7)) + (threadIdx.z*196)) + (threadIdx.y*7)) + (threadIdx.x*7)) + (ff.inner.inner.inner*49)) + (yy.inner.inner.inner*7)) + xx.inner.inner.inner)] = compute.local[((((((((((nn*28) + (blockIdx.y*49)) + (blockIdx.x*7)) + (vthread*1792)) + (vthread*49)) + (vthread*7)) + (threadIdx.x*7)) + (ff.inner.inner.inner*7)) + (yy.inner.inner.inner*7)) + xx.inner.inner.inner)]
+        }
+      }
+    }
+  }
+}

@@ -154,8 +154,8 @@ def conv2d_no_batching(N, H, W, CO, CI, KH, KW, stride, padding):
     s[output].pragma(kernel_scope, 'auto_unroll_max_step', cfg['auto_unroll_max_step'].val)
     s[output].pragma(kernel_scope, 'unroll_explicit', cfg['unroll_explicit'].val)
 
-    args = [raw_data, kernel, conv]
-    ir = tvm.lower(s, args, simple_mode=True)
+    # args = [raw_data, kernel, conv]
+    # ir = tvm.lower(s, args, simple_mode=True)
 
     # print(dir(tvm.autotvm))
 
@@ -186,11 +186,9 @@ def run(tuner, n_trial, config_file, repeat_number):
         runner=autotvm.LocalRunner(repeat=3, min_repeat_ms=100, timeout=run_timeout)
     )
 
-    # Begin tuning, log records to file `conv2d.log`
+    # Begin tuning, log records to file `config_file`.
     # During tuning we will also try many invalid configs, so you are expected to
     # see many error reports. As long as you can see non-zero GFLOPS, it is okay.
-    # tuner = autotvm.tuner.XGBTuner(task)
-    # n_trial = 200
     tuner.tune(n_trial=n_trial,
                measure_option=measure_option,
                callbacks=[autotvm.callback.log_to_file(config_file)])
